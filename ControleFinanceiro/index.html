@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Financeiro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="img/ursopolar.png" alt="urso">
+            <div class="texto">
+                <h1>BEM-VINDA JÚLIA</h1>
+                <p>Esse é seu controle financeiro</p>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <div class="resumo">
+            <div class="div-entrada">
+                Entradas: R$
+                <span class="entradas">0.00</span>
+            </div>
+            <div class="div-saida">
+                Saídas: R$
+                <span class="saidas">0.00</span>
+            </div>
+            <div class="div-total">
+                Total: R$
+                <span class="total">0.00</span>
+            </div>
+        </div>
+
+        <div class="novoItem">
+            <h2>Adicione:</h2>
+            <div class="info">
+                
+                <div class="divDesc">
+                    <label for="desc">Descrição</label>
+                    <input placeholder="Descreva o valor" type="text" id="desc">
+                </div>
+                <div class="divValor">
+                    <label for="valor">Valor</label>
+                    <input placeholder="Informe o valor" type="text" id="valor">
+                </div>
+            </div>
+
+            <div class="divTipo">
+                <div class="escolha">
+                    <label for="tipo">Tipo</label>
+                    <select id="tipo">
+                    <option>Entrada</option>
+                    <option>Saída</option>
+                </select>
+                </div>
+                <button id="btnNovo">Incluir</button>
+            </div>
+            
+        </div>
+        <div class="divTabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th class="columnValor">Valor</th>
+                        <th class="columnTipo">Tipo</th>
+                        <th class="columnAcao"></th>
+                    </tr>
+                </thead>
+                <hr>
+                <tbody></tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

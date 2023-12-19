@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rethink Sans', sans-serif;
+    background-image: url(img/fundo03.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header{
+    margin-top: 35px;
+}
+
+header img{
+    width: 100px;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto{
+    margin-left: 8px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resumo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 25px 50px 0 50px;
+}
+
+.div-entrada,
+.div-saida,
+.div-total{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px 0 20px;
+    background-color: white;
+    border: 3px solid rgb(19, 11, 121);
+    border-radius: 15px;
+    width: 150px;
+    padding: 10px 0 10px 10px;
+    font: 500 16px 'Rethink Sans', sans-serif;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divDesc, .divValor {
+    display: flex;
+    flex-direction: column;
+}
+
+.novoItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 620px;
+}
+
+.novoItem h2 {
+    margin: 20px 0 10px;
+    font: 500 20px 'Rethink Sans', sans-serif;
+}
+
+label {
+    font: 600 20px 'Rethink Sans', sans-serif;
+    border-bottom: 3px solid #0e0955;
+    margin-bottom: 5px;
+}
+
+#desc, #valor {
+    font: 500 15px 'Rethink Sans', sans-serif;
+    height: 35px;
+    outline: 0;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.divDesc {
+    margin-right: 20px;
+}
+
+.divDesc, .divValor {
+    margin-bottom: 10px;
+    width: 250px;
+    
+}
+
+.escolha {
+    display: flex;
+    flex-direction: column;
+}
+
+.divTipo {
+    align-items: end;
+    display: flex;
+}
+
+#tipo {
+    font: 500 15px 'Rethink Sans', sans-serif;
+    height: 45px;
+    outline: 0;
+    border: 3px solid rgb(19, 11, 121);
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+#btnNovo {
+    margin-left: 80px;
+    font: 600 15px 'Rethink Sans', sans-serif;
+    height: 45px;
+    outline: 0;
+    color: white;
+    background-color: #0e0955;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#btnNovo, #tipo {
+    align-items: center;
+    width: 100px;
+}
+
+.divTabela {
+    margin-top: 30px;
+}
+
+th {
+    font: 600 20px 'Rethink Sans', sans-serif;
+    color: white;
+    background-color: #0e0955;
+    padding: 0 60px;
+    text-align: center;
+
+}
+
+td {
+    font: 600 20px 'Rethink Sans', sans-serif;
+    background-color: white;
+    color: #000000;
+    border-bottom: 3px solid #0e0955;
+    padding: 0 60px;
+    text-align: left;
+}
+
+.columnAcao button {
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    font: 600 20px 'Rethink Sans', sans-serif;
+    background-color: #0e0955;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.columnAcao {
+    background-color: transparent;
+    padding: 0;
+}
+
+hr {
+    height: 3px;
+    background-color: #0e0955;
+}
